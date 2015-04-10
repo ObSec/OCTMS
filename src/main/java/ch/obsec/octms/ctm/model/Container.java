@@ -13,7 +13,7 @@ public class Container {
 	private static final Logger LOGGER = LoggerFactory.getLogger(Container.class);
 
 	private String containerID;
-	private String containerTEU;
+	private TEU containerTEU;
 	private String containerSource;
 	private String containerDestination;
 	private String containerLocation;
@@ -42,14 +42,14 @@ public class Container {
 	 */
 	public String getContainerTEU() {
 		LOGGER.debug("getContainerType(): {}",containerTEU);
-		return containerTEU;
+		return containerTEU.name();
 	}
 
 	/**
 	 * setContainerType
 	 * @param containerTEU set TEU of the container
 	 */
-	public void setContainerTEU(String containerTEU) {
+	public void setContainerTEU(TEU containerTEU) {
 		LOGGER.debug("setContainerType({})",containerTEU);
 		this.containerTEU = containerTEU;
 	}

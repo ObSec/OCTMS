@@ -1,6 +1,8 @@
 package ch.obsec.octms.ctm;
 
 import ch.obsec.octms.ctm.model.Container;
+import ch.obsec.octms.ctm.model.TEU;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +21,7 @@ public class ContainerTerminal {
 
 		Container c000001 = new Container();
 		c000001.setContainerID("000001");
-		c000001.setContainerTEU("2");
+		c000001.setContainerTEU(TEU.FORTY);
 		c000001.setContainerSource("Zurich");
 		c000001.setContainerDestination("Basel");
 		c000001.setContainerLocation("Merenschwand");
