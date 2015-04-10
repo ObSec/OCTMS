@@ -28,7 +28,7 @@ public class Container {
 	}
 
 	/**
-	 * setContainerID
+	 * setContainerID -> = BIC-U -> ILU-K
 	 * @param containerID set ID of the container
 	 */
 	public void setContainerID(String containerID) {
